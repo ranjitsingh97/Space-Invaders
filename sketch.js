@@ -28,14 +28,14 @@ function draw() {
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
   
-  /*for(var i=flowers.length; i<random(flowers.length + 0.22)%100 ;i++) {
+  for(var i=flowers.length; i<random(flowers.length + 0.22)%100 ;i++) {
     flowers[i] = new Flower(img1, random(width), random(-100,-500));
-  }*/
+  }
   
-  if(flowers.length<10) {
+  /*if(flowers.length<10) {
     var flower = new Flower(img1, random(width), random(-100,-500));
     flowers.push(flower);
-  }
+  }*/
   
   
   for (i = 0; i < drops.length; i++) {
@@ -70,11 +70,11 @@ function draw() {
     }
   }
   
-  for(i=0; i<flowers.length; i++) {
+  /*for(i=0; i<flowers.length; i++) {
     if(flowers[i].y > height) {
       flowers.splice(i,1);
     }
-  }
+  }*/
   
   
   if(edge) {
